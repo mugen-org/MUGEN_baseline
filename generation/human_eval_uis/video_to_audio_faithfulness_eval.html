@@ -1,0 +1,43 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-classifier
+      name="audio-comparison"
+      categories="['Audio 1', 'Audio 2']"
+      header="Which audio best matches the video?"
+    >
+      <classification-target>
+        <p><b>Which audio best matches the video?</b></p>
+        <p>Listen to the audio samples which have been overlaid on the same video. To determine which audio better matches the video, consider which audio has the appropriate sound effects triggered at the right time.</p>
+        <div style="float: left">
+            <p>Audio 1</p>
+            <video width="350" height="350" controls>
+                <source src="${video_1}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div style="float: right; vertical-align: top">
+            <p>Audio 2</p>
+            <video width="350" height="350" controls>
+                <source src="${video_2}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+      </classification-target>
+      <short-instructions>
+            <p><b>YOU MUST BE ABLE TO LISTEN TO AUDIO TO COMPLETE THIS TASK</b></p>
+            <p>Which audio best matches the video?</p>
+            <p>Listen to the audio samples which have been overlaid on the same video. To determine which audio better matches the video, consider which audio has the appropriate sound effects triggered at the right time.</p>
+            <p>Please ignore the quality of the audio (e.g., distortion, sound quality).</p>
+            <p>Please watch and listen multiple times if you need to.</p>
+        </short-instructions>
+
+        <full-instructions header="Instructions">
+            <p><b>YOU MUST BE ABLE TO LISTEN TO AUDIO TO COMPLETE THIS TASK</b></p>
+            <p>Which audio best matches the video?</p>
+            <p>Listen to the audio samples which have been overlaid on the same video. To determine which audio better matches the video, consider which audio has the appropriate sound effects triggered at the right time.</p>
+            <p>Please ignore the quality of the audio (e.g., distortion, sound quality).</p>
+            <p>Please watch and listen multiple times if you need to.</p>
+        </full-instructions>
+    </crowd-classifier>
+</crowd-form>

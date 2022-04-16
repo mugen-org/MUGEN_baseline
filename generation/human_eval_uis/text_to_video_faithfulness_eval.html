@@ -1,0 +1,43 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-classifier
+      name="video-comparison"
+      categories="['Video 1', 'Video 2']"
+      header="Which video best matches the text?"
+    >
+      <classification-target>
+        <p><b>Which video best matches the text?</b></p>
+        <p>Refer to the entity list so you know which word refers to which object or character in the video.</p>
+        <img style="width: 650; height: 75; float: center" src="https://dl.noahmt.com/creativity/data/character_list.png"/>
+        <p><b>Text:</b> ${input_text}</p>
+        <div style="float: left">
+            <p>Video 1</p>
+            <video width="350" height="350" controls>
+                <source src="${video_1}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div style="float: right; vertical-align: top">
+            <p>Video 2</p>
+            <video width="350" height="350" controls>
+                <source src="${video_2}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+      </classification-target>
+      <short-instructions>
+            <p>Which video best matches the text?</p>
+            <p>Please ignore the quality of the video (e.g., sharpness, resolution).</p>
+            <p>Refer to the entity list so you know which word refers to which object or character in the video.</p>
+            <p>Please watch the video multiple times if you need to.</p>
+        </short-instructions>
+
+        <full-instructions header="Instructions">
+            <p>Which video best matches the text?</p>
+            <p>Please ignore the quality of the video (e.g., sharpness, resolution).</p>
+            <p>Refer to the entity list so you know which word refers to which object or character in the video.</p>
+            <p>Please watch the video multiple times if you need to.</p>
+        </full-instructions>
+    </crowd-classifier>
+</crowd-form>

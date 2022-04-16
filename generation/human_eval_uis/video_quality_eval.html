@@ -1,0 +1,41 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-classifier
+      name="video-comparison"
+      categories="['Video 1', 'Video 2']"
+      header="Which video is higher quality?"
+    >
+      <classification-target>
+        <p><b>Which video is higher quality?</b></p>
+        <p>Definition of quality: clarity in object's appearance (i.e., blurriness); object's appearance should be consistent across time (i.e., no skipping, disappearance)</p>
+        <div style="float: left">
+            <p>Video 1</p>
+            <video width="350" height="350" controls>
+                <source src="${video_1}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div style="float: right; vertical-align: top">
+            <p>Video 2</p>
+            <video width="350" height="350" controls>
+                <source src="${video_2}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+      </classification-target>
+      <short-instructions>
+            <p>Which video is higher quality?</p>
+            <p>Definition of quality:</p>
+            <p>- Clarity in object's appearance (i.e., blurriness)</p>
+            <p>- Object's appearance should be consistent across time (i.e., no skipping, disappearance)</p>
+        </short-instructions>
+
+        <full-instructions header="Instructions">
+            <p>Which video is higher quality?</p>
+            <p>Definition of quality:</p>
+            <p>- Clarity in object's appearance (i.e., blurriness)</p>
+            <p>- Object's appearance should be consistent across time (i.e., no skipping, disappearance)</p>
+        </full-instructions>
+    </crowd-classifier>
+</crowd-form>

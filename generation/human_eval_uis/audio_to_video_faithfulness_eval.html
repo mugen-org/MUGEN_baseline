@@ -1,0 +1,50 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-classifier
+      name="video-comparison"
+      categories="['Video 1', 'Video 2']"
+      header="Which video best matches the audio?"
+    >
+      <classification-target>
+        <p><b>Which video best matches the audio?</b></p>
+        <p>First, listen to the audio below. Then, watch the videos which have the same audio overlaid. To determine which video better matches the audio, consider which video shows the appropriate actions triggered at the right time.</p>
+        <figure>
+            <figcaption><b>Audio:</b></figcaption>
+            <audio controls>
+                <source src="${input_audio}" type="audio/wav">
+                Your browser does not support the <code>audio</code> element.
+            </audio>
+        </figure>
+        <div style="float: left">
+            <p>Video 1</p>
+            <video width="350" height="350" controls>
+                <source src="${video_1}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+        <div style="float: right; vertical-align: top">
+            <p>Video 2</p>
+            <video width="350" height="350" controls>
+                <source src="${video_2}" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+        </div>
+      </classification-target>
+      <short-instructions>
+            <p><b>YOU MUST BE ABLE TO LISTEN TO AUDIO TO COMPLETE THIS TASK</b></p>
+            <p>Which video best matches the audio?</p>
+            <p>First, listen to the audio below. Then, watch the videos which have the same audio overlaid. To determine which video better matches the audio, consider which video shows the appropriate actions triggered at the right time. For instance, when the audio makes the 'pop' jump sound, the character should jump in the video.</p>
+            <p>Please ignore the quality of the video (e.g., sharpness, resolution).</p>
+            <p>Please watch the video multiple times if you need to.</p>
+        </short-instructions>
+
+        <full-instructions header="Instructions">
+            <p><b>YOU MUST BE ABLE TO LISTEN TO AUDIO TO COMPLETE THIS TASK</b></p>
+            <p>Which video best matches the audio?</p>
+            <p>First, listen to the audio below. Then, watch the videos which have the same audio overlaid. To determine which video better matches the audio, consider which video shows the appropriate actions triggered at the right time. For instance, when the audio makes the 'pop' jump sound, the character should jump in the video.</p>
+            <p>Please ignore the quality of the video (e.g., sharpness, resolution).</p>
+            <p>Please watch the video multiple times if you need to.</p>
+        </full-instructions>
+    </crowd-classifier>
+</crowd-form>

@@ -1,0 +1,6 @@
+[submodule "tokenizers"]
+	path = tokenizers
+	url = https://github.com/huggingface/tokenizers
+[submodule "jukebox"]
+	path = jukebox
+	url = https://github.com/openai/jukebox.git

@@ -1,0 +1,25 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-classifier
+      name="text-comparison"
+      categories="['Text 1', 'Text 2']"
+      header="Which text is more realistic (i.e., likely to be written by a human)?"
+    >
+      <classification-target>
+        <p><b>Which text is more realistic (i.e., likely to be written by a human)?</b></p>
+        <p>Consider grammar, style, and level of detail.</p>
+        <p><b>Text 1: </b>${text_1}</p>
+        <p><b>Text 2: </b>${text_2}</p>
+      </classification-target>
+      <short-instructions>
+            <p>Which text is more realistic (i.e., likely to be written by a human)?</p>
+            <p>Consider grammar, style, and level of detail.</p>
+        </short-instructions>
+
+        <full-instructions header="Instructions">
+            <p>Which text is more realistic (i.e., likely to be written by a human)?</p>
+            <p>Consider grammar, style, and level of detail.</p>
+        </full-instructions>
+    </crowd-classifier>
+</crowd-form>

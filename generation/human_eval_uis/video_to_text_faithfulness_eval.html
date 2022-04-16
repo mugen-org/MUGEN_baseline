@@ -1,0 +1,35 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-classifier
+      name="caption-comparison"
+      categories="['Caption 1', 'Caption 2']"
+      header="Which caption best describes the video?"
+    >
+      <classification-target>
+        <p><b>Which caption best describes the video?</b></p>
+        <p>Refer to the entity list so you know which word refers to which object or character in the video.</p>
+        <img style="width: 650; height: 75; float: center" src="https://dl.noahmt.com/creativity/data/character_list.png"/>
+        <p><b>Video</b></p>
+        <video width="350" height="350" controls>
+                <source src="${input_video}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p><b>Caption 1:</b> ${text_1}</p>
+        <p><b>Caption 2:</b> ${text_2}</p>
+      </classification-target>
+      <short-instructions>
+            <p>Which caption best describes the video?</p>
+            <p>Refer to the entity list so you know which word refers to which object or character in the video.</p>
+            <p>When evaluating captions, consider if the caption describes the actions and interactions between characters.</p>
+            <p>Please watch the video multiple times if you need to.</p>
+        </short-instructions>
+
+        <full-instructions header="Instructions">
+            <p>Which caption best describes the video?</p>
+            <p>Refer to the entity list so you know which word refers to which object or character in the video.</p>
+            <p>When evaluating captions, consider if the caption describes the actions and interactions between characters.</p>
+            <p>Please watch the video multiple times if you need to.</p>
+        </full-instructions>
+    </crowd-classifier>
+</crowd-form>

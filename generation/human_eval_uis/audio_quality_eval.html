@@ -1,0 +1,39 @@
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+
+<crowd-form>
+    <crowd-classifier
+      name="audio-comparison"
+      categories="['Audio 1', 'Audio 2']"
+      header="Which audio is higher quality?"
+    >
+      <classification-target>
+        <p><b>Which audio is higher quality?</b></p>
+        <p>Definition of quality: clarity of sound effects and background music (i.e., not distorted)</p>
+        <div style="float: left">
+            <p>Audio 1</p>
+            <audio controls>
+                <source src="${audio_1}" type="audio/wav">
+                Your browser does not support the <code>audio</code> element.
+            </audio>
+        </div>
+        <div style="float: right; vertical-align: top">
+            <p>Audio 2</p>
+            <audio controls>
+                <source src="${audio_2}" type="audio/wav">
+                Your browser does not support the <code>audio</code> element.
+            </audio>
+        </div>
+      </classification-target>
+      <short-instructions>
+            <p><b>YOU MUST BE ABLE TO LISTEN TO AUDIO TO COMPLETE THIS TASK</b></p>
+            <p>Which audio is higher quality?</p>
+            <p>Definition of quality: clarity of sound effects and background music (i.e., not distorted)</p>
+        </short-instructions>
+
+        <full-instructions header="Instructions">
+            <p><b>YOU MUST BE ABLE TO LISTEN TO AUDIO TO COMPLETE THIS TASK</b></p>
+            <p>Which audio is higher quality?</p>
+            <p>Definition of quality: clarity of sound effects and background music (i.e., not distorted)</p>
+        </full-instructions>
+    </crowd-classifier>
+</crowd-form>

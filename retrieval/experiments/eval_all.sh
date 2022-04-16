@@ -1,0 +1,1 @@
+python retrieval/eval.py --get_game_frame --get_audio --get_text_desc --use_manual_annotation
