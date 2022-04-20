@@ -37,4 +37,10 @@ Please refer [here](retrieval/README.md) for video-audio-text retrieval details 
 ## Citation
 If any part of our paper and code is helpful to your work, please generously cite with:
 ```
+@article{hayes2022mugen,
+  title={MUGEN: A Playground for Video-Audio-Text Multimodal Understanding and GENeration},
+  author={Hayes, Thomas and Zhang, Songyang and Yin, Xi and Pang, Guan and Sheng, Sasha and Yang, Harry and Ge, Songwei and Hu, Qiyuan and Parikh, Devi},
+  journal={arXiv preprint arXiv:2204.08058},
+  year={2022}
+}
 ```
