@@ -1,4 +1,4 @@
-# Baseline for  MUGEN
+# MUGEN Baseline
 
 [Project Page](https://mugen-org.github.io/)
 [Paper](https://arxiv.org/pdf/2204.08058.pdf)
