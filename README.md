@@ -1,5 +1,7 @@
 # Baseline for  MUGEN
 
+[Project Page](https://mugen-org.github.io/)
+
 ## Install
 Please run the following command to setup the environment.
 ```
