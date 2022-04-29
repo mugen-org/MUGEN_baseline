@@ -1,6 +1,6 @@
 # MUGEN Baseline
 
-[Project Page](https://mugen-org.github.io/) | [Paper](https://arxiv.org/abs/2204.08058)
+[Project Page](https://mugen-org.github.io/) | [Paper](https://arxiv.org/pdf/2204.08058.pdf)
 
 ## Install
 Please run the following command to setup the environment.
