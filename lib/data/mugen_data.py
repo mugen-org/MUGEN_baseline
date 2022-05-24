@@ -182,7 +182,7 @@ class MUGENDataset(data.Dataset):
         result_dict = {}
 
         if self.args.get_audio:
-            wav_file = os.path.join(self.dataset_metadata["data_folder"], self.data[idx]["video"]["audio_file"])
+            wav_file = os.path.join(self.dataset_metadata["data_folder"], self.data[idx]["video"]["video_file"])
             result_dict['audio'] = self.get_game_audio(wav_file)
 
         if self.args.get_game_frame:
