@@ -6,7 +6,8 @@
 Please run the following command to setup the environment.
 ```
 conda create --name mugen python=3.9.5
-pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torch==1.7.1+cu110 torchvision==0.8.2+cu110 torchaudio==0.7.2 torchtext==0.8 -f https://download.pytorch.org/whl/torch_stable.html
+pip install torchmetrics==0.7.3
 pip install pytorch_lightning==1.3.3 einops ftfy regex transformers==4.11.3
 pip install av==8.0.3
 pip install fire soundfile librosa numba unidecode tqdm mpi4py tensorboardX
